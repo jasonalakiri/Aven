@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+/* body */
+body {
+  background: #0B1220;
+  color: #F2F5FA;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 41px 25px;
+}
+/* h1 */
+h1 {
+  margin: 0 0 8px;
+}
+/* p */
+p {
+  color: #9AA8C0;
+  margin: 0 0 26px;
+}
+/* button */
+button {
+  background: #FF7A00;
+  color: #0B1220;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* hover */
+button:hover {
+  /* background: #FFD43B; */
+    background: #8B5CF1;
+}
+/* small screen */
+@media screen and (max-width: 400px) {
+  body {
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  button {
+    width: 90%;
+    padding: 14px, 24px;
+  }
+}

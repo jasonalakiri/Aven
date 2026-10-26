@@ -1,1 +1,1 @@
-console.log("Storaage Loaded");
+console.log("Storage Loaded");

@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>Aven</h1>
         <p>Become the developer who shows up.</p>
         <p>A consistency tracker for people learning to code.</p>
         <p id="challengeName">No challenge yet</p>
         <p><span id="progressText">Day 0 of 0</span> <span id="progressPct">0%</span></p>
         <div id="progressBar"><div id="progressFill"></div></div>
-    </header>
+    </header> -->
+
+    <header>
+    <h1>Aven</h1>
+    <p class="tagline">Become the developer who shows up.</p>
+    <p class="description">A consistency tracker for people learning to code.</p>
+    <p id="challengeName">No challenge yet</p>
+    <p class="progressLine"><span id="progressText">Day 0 of 0</span> <span id="progressPct">0%</span></p>
+    <div id="progressBar"><div id="progressFill"></div></div>
+</header>
 
     <nav id="tabs">
         <button type="button" data-tab="today">Today</button>
@@ -26,28 +35,30 @@
         <h2>Today</h2>
         <button id="logButton">Log Today</button>
     </section>
-
     <section data-panel="progress">
-        <h2>Progress</h2>
-        <div>
-            <p>Challenge day</p>
-            <p id="statDay">0</p>
-        </div>
-        <div>
-            <p>Days completed</p>
-            <p id="statCompleted">0</p>
-        </div>
-        <div>
-            <p>Current streak</p>
-            <p id="statStreak">0</p>
-        </div>
-        <div>
-            <p>Longest streak</p>
-            <p id="statLongest">0</p>
-        </div>
+      <h2>Progress</h2>
+      <div class="statGrid">
+    <div class="card">
+        <p>Challenge day</p>
+        <p id="statDay" class="statValue">0</p>
+    </div>
+    <div class="card">
+        <p>Days completed</p>
+        <p id="statCompleted" class="statValue">0</p>
+    </div>
+    <div class="card">
+        <p>Current streak</p>
+        <p id="statStreak" class="statValue">0</p>
+    </div>
+    <div class="card">
+        <p>Longest streak</p>
+        <p id="statLongest" class="statValue">0</p>
+    </div>
+</div>
         <p>Challenge completion: <span id="statPct">0%</span></p>
         <h3>This week</h3>
     </section>
+
 
     <section data-panel="history">
         <h2>History</h2>

@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 /* body */
-body {
+ body {
   background: #0B1220;
   color: #F2F5FA;
   font-family: system-ui, sans-serif;
@@ -10,15 +10,28 @@ body {
   margin: 0;
   padding: 41px 25px;
 }
-/* h1 */
+/* header */
+header {
+  margin-bottom: 24px;
+}
 h1 {
-  margin: 0 0 8px;
+  font-size: 44px;
+  letter-spacing: -0.02em;
+  color: #FF7A00;
+  margin: 0 0 6px;
 }
-/* p */
-p {
+.tagline {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F2F5FA;
+  margin: 0 0 4px;
+}
+.description {
+  font-size: 15px;
   color: #9AA8C0;
-  margin: 0 0 26px;
+  margin: 0 0 20px;
 }
+
 /* button */
 button {
   background: #FF7A00;
@@ -30,11 +43,39 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
-/* hover */
 button:hover {
-  /* background: #FFD43B; */
     background: #8B5CF1;
 }
+
+
+/* progress datapanel */
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;    
+  margin-bottom: 24px;          
+}
+.card {
+  background: #111A2D;       
+  border: 1px solid #223041;        
+  border-radius: 10px;
+  padding: 16px 24px;
+}
+.card p {
+  margin: 0;               
+}
+.card p:first-child {
+  color: #9AA8C0;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.statValue {
+  font-size: 33px;               
+  font-weight: bold;
+  color: #FFD43B;     
+}
+
+
 /* small screen */
 @media screen and (max-width: 400px) {
   body {
@@ -47,6 +88,12 @@ button:hover {
 
   button {
     width: 90%;
-    padding: 14px, 24px;
+    padding: 14px 24px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .statGrid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -1,4 +1,4 @@
-// console.log("App Loaded");
+console.log("App Loaded");
 const logBtn = document.getElementById("logButton");
 //gets today's Date in YYYY-MM-DD format
 function getToday() {
@@ -12,7 +12,12 @@ function getToday() {
 logBtn.addEventListener("click", function () {
   console.log("Logged for", getToday());
 });
+const logForm = document.getElementById("logForm");
 
+logForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  console.log("Logged for", getToday());
+});
 
 
 
